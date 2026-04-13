@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     
     CORS_ORIGINS: List[str] = ["http://localhost:8080", "http://localhost:3000"]
     
-    DATABASE_URL: str = "postgresql://user:password@localhost:5432/zongqin_db"
+    DATABASE_URL: str = "sqlite:///./zongqin.db"
     MONGODB_URL: str = "mongodb://localhost:27017"
     MONGODB_DB_NAME: str = "zongqin"
     
