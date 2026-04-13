@@ -1,0 +1,32 @@
+{
+  "name": "zongqin-xungen-ui",
+  "version": "1.0.0",
+  "description": "宗亲寻根·薪火相传APP - 前端应用",
+  "productName": "宗亲寻根",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "quasar": "^2.14.0",
+    "@quasar/extras": "^1.16.0",
+    "pinia": "^2.1.7",
+    "vue-router": "^4.2.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.9.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-vue": "^9.19.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": "^18 || ^20",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

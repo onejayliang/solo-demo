@@ -1,0 +1,15 @@
+.DS_Store
+.thumbs.db
+*.swp
+
+node_modules
+.quasar
+dist
+.vercel
+.netlify
+
+.env
+.env.local
+.env.*.local
+
+*.log
