@@ -1,0 +1,25 @@
+$primary-color: #8B4513;
+$secondary-color: #D2691E;
+$accent-color: #FFD700;
+
+body {
+  font-family: 'Noto Serif SC', 'SimSun', serif;
+  background: linear-gradient(135deg, #FFF8DC 0%, #FAEBD7 100%);
+}
+
+.header-decoration {
+  background: linear-gradient(90deg, #8B4513, #D2691E, #8B4513);
+  height: 4px;
+}
+
+.traditional-border {
+  border: 2px solid #8B4513;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(139, 69, 19, 0.2);
+}
+
+.seal-stamp {
+  color: #DC143C;
+  font-family: 'STXingkai', 'KaiTi', cursive;
+  font-size: 2rem;
+}
