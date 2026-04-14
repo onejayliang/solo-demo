@@ -11,8 +11,8 @@ class Settings(BaseSettings):
     APP_DEBUG: bool = True
     APP_VERSION: str = "1.0.0"
     
-    HOST: str = "0.0.0.0"
-    PORT: int = 8000
+    HOST: str = "127.0.0.1"
+    PORT: int = 7000
     
     SECRET_KEY: str = "your-super-secret-key-change-in-production-at-least-32-chars"
     ALGORITHM: str = "HS256"

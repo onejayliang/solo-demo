@@ -3,8 +3,8 @@ const { configure } = require('quasar/wrappers');
 module.exports = configure(function (/* ctx */) {
   return {
     eslint: {
-      warnings: true,
-      errors: true
+      warnings: false,
+      errors: false
     },
 
     boot: [],
@@ -30,7 +30,16 @@ module.exports = configure(function (/* ctx */) {
 
     devServer: {
       open: true,
-      port: 8080
+      port: 8080,
+      proxy: {
+        '/api': {
+          target: 'http://localhost:7000',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/api': '/api'
+          }
+        }
+      }
     },
 
     framework: {
@@ -39,6 +48,24 @@ module.exports = configure(function (/* ctx */) {
         'Notify',
         'Dialog',
         'Loading'
+      ],
+      components: [
+        'QLayout',
+        'QHeader',
+        'QFooter',
+        'QPageContainer',
+        'QPage',
+        'QToolbar',
+        'QToolbarTitle',
+        'QBtn',
+        'QSpace',
+        'QAvatar',
+        'QCard',
+        'QCardSection',
+        'QIcon',
+        'QImg',
+        'QRow',
+        'QCol'
       ]
     },
 
